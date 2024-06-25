@@ -41,8 +41,10 @@ app.use((err, req, res, next) => {
  res.status(err.status || 500).send(err.stack);
 });
 
-server.listen(port, '0.0.0.0', () => {
-  console.log('Aplicación de NodeJS ' + process.pid + ' inició en el puerto '+ port);
-});
+if (require.main === module) {
+ app.listen(port, '0.0.0.0', () => {
+   console.log('Aplicación de NodeJS ' + process.pid + ' inició en el puerto ' + port);
+ });
+}
 
 module.exports = app; // Exporta la app en lugar del servidor
