@@ -41,10 +41,8 @@ app.use((err, req, res, next) => {
  res.status(err.status || 500).send(err.stack);
 });
 
-if (require.main === module) {
- app.listen(port, 'cfgo-ied.mysql.database.azure.com' || 'localhost', () => {
-   console.log('Aplicación de NodeJS ' + process.pid + ' inició en el puerto ' + port);
- });
-}
+server.listen(port, '0.0.0.0', () => {
+  console.log('Aplicación de NodeJS ' + process.pid + ' inició en el puerto '+ port);
+});
 
 module.exports = app; // Exporta la app en lugar del servidor
