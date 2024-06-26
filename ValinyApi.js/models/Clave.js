@@ -1,4 +1,4 @@
-const db = require('../config/config');
+const db = require('../knexfile.js');
 const crypto = require('crypto');
 
 function aesEncrypt(text, key) {

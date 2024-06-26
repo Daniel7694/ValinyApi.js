@@ -2,7 +2,7 @@ const knex = require('knex');
 
 const knexConfig = {
   development: {
-    client: 'mssql',
+    client: 'mysql',
     connection: {
       server: 'cfgo-ied.database.windows.net',
       user: 'sasqlvaliny',

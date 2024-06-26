@@ -1,4 +1,4 @@
-const db = require('../config/config');
+const db = require('../knexfile.js');
 const jwt = require('jsonwebtoken');
 
 const crypto = require('crypto');
