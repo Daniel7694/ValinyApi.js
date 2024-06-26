@@ -14,7 +14,7 @@ const Administradores = {};
 
 
 Administradores.create = async (administrador, result) => {
-    const sql = `INSERT INTO Administradores (
+    const sql = `INSERT INTO administradores (
                     ID_Admin,
                     Rol,
                     Clave,
