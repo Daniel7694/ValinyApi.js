@@ -4,6 +4,7 @@
   "description": "Backend de la App de prueba React Native",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "mocha"
   },
   "keywords": [
