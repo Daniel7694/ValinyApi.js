@@ -66,7 +66,7 @@ Estudiantes.create = async (estudiantes, result) => {
       
         
         Estudiantes.getAll = (result) => {
-            const sql = 'SELECT * FROM cfgo_ied.vista_estu'; // Utilizamos la vista Vista_Estu en lugar de la tabla Estudiantes
+            const sql = 'SELECT * FROM dbo.vista_estu'; // Utilizamos la vista Vista_Estu en lugar de la tabla Estudiantes
             db.query(sql, (err, res) => {
                 if (err) {
                     console.log('Error al buscar los estudiantes: ', err);
